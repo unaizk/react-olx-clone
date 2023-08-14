@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Signup from "./Pages/Signup"
 import Login from "./Pages/Login"
 import { AuthContext, FirebaseContext } from "./store/Context";
+import Create from "./Pages/Create"
 /**
  * ?  =====Import Components=====
  */
@@ -11,7 +12,7 @@ import Home from "./Pages/Home";
 
 function App() {
 
-  
+
   const {setUser} = useContext(AuthContext)
   const {Firebase} = useContext(FirebaseContext)
 
@@ -34,6 +35,9 @@ function App() {
         </Route>
         <Route path="/login">
           <Login />
+        </Route>
+        <Route path="/create">
+          <Create />
         </Route>
       </Router>
     </div>
