@@ -1,70 +1,48 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# OLX Clone Project
 
-## Available Scripts
+This project is a clone of the OLX platform. To run the application after cloning this repository, follow the steps below.
 
-In the project directory, you can run:
+## Prerequisites
 
-### `yarn start`
+- Node.js version 16 is required. If you have a different version installed, you'll need to switch to version 16.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Clone this repository to your local machine.
 
-### `yarn test`
+2. Open the `package.json` file in the root directory of the cloned repository.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Change the `"start"` script in `package.json` to the following:
 
-### `yarn build`
+    
+    "start": "node --openssl-legacy-provider ./node_modules/react-scripts/scripts/start.js"
+    
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Open your terminal or command prompt.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. Uninstall the latest version of Node.js (if it's not version 16) using the following command:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    npm uninstall -g node@v18.12.1
+    
 
-### `yarn eject`
+6. Install Node.js version 16 using the following command:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    
+    npm install -g node@v16
+    
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+7. Install the latest version of `react-scripts` using the following command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    
+    npm install react-scripts@latest
+    
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+8. Now you're all set! To start the application, enter the following command in your terminal:
 
-## Learn More
+    
+    npm start
+    
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+9. The application should now be running locally. Open your web browser and navigate to `http://localhost:3000` to access the OLX Clone project.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
