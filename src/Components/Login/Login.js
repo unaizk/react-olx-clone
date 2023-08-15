@@ -1,5 +1,5 @@
 import React, { useState,useContext } from 'react';
-import {useHistory} from "react-router-dom"
+import {useHistory,Link} from "react-router-dom"
 import {FirebaseContext} from "../../store/Context"
 
 import Logo from '../../olx-logo.png';
@@ -51,7 +51,9 @@ function Login() {
           <br />
           <button>Login</button>
         </form>
-        <a>Signup</a>
+      <Link to = "/signup">
+        <a style={{color:"black"}}>Signup</a>
+        </Link>
       </div>
     </div>
   );

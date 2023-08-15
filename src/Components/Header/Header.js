@@ -1,4 +1,5 @@
 import React,{useContext} from 'react';
+import { Link } from 'react-router-dom';
 
 import './Header.css';
 import OlxLogo from '../../assets/OlxLogo';
@@ -27,7 +28,9 @@ function Header() {
     <div className="headerParentDiv">
       <div className="headerChildDiv">
         <div className="brandName">
+          <Link to="/">
           <OlxLogo></OlxLogo>
+          </Link>
         </div>
         <div className="placeSearch">
           <Search></Search>
@@ -50,7 +53,15 @@ function Header() {
           <Arrow></Arrow>
         </div>
         <div className="loginPage">
-          <span>{user?`Welcome ${user.displayName}`:"Login"}</span>
+        {user ? (
+             
+              <span>{`Welcome ${user.displayName}`}</span>
+            
+          ) : (
+            <Link to="/login"> 
+              <span style={{color:"black"}}>Login</span>
+            </Link>
+          )}
           <hr />
           
         </div>
@@ -61,11 +72,13 @@ function Header() {
         }}>Logout</span>}
 
         <div className="sellMenu">
+        <Link to={user ? '/create' : '/login'}>
           <SellButton></SellButton>
           <div className="sellMenuContent">
             <SellButtonPlus></SellButtonPlus>
             <span>SELL</span>
           </div>
+          </Link>
         </div>
       </div>
     </div>
